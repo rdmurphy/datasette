@@ -326,6 +326,6 @@ Datasette bundles `CodeMirror <https://codemirror.net/>`__ for the SQL editing i
 * Install the packages with `npm i codemirror @codemirror/lang-sql`
 * Build the bundle using the version number from package.json with:
 
-    node_modules/.bin/rollup datasette/static/cm-editor-6.0.1.js -f iife -n cm -o datasette/static/cm-editor-6.0.1.bundle.js -p @rollup/plugin-node-resolve -p @rollup/plugin-terser
+    node_modules/.bin/rollup datasette/static/cm-editor-6.0.1.js -f esm -n cm -o datasette/static/cm-editor-6.0.1.bundle.js -p @rollup/plugin-node-resolve -p @rollup/plugin-terser
 
 * Update version reference in the `codemirror.html` template
